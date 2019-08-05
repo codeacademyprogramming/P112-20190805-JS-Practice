@@ -1,0 +1,86 @@
+.wrapper {
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.menu-icon span {  
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    display: block;
+    margin: 5px 0;
+}
+
+.slideshow {
+    position: relative;
+    margin-top: 30px;
+}
+
+.slideshow .slides{
+    position: relative;
+    height: 300px;
+    background-color: red;
+}
+.slideshow .slides .slide-item{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.5s;
+}
+
+.slideshow .slides .slide-item.active {
+    opacity: 1;
+}
+
+
+.slideshow .slides .slide-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow .arrow {
+    position: absolute;
+    font-size: 50px;
+    color: #767676;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slideshow .arrow:hover{
+    color: #414141;
+}
+
+.slideshow .arrow.arrow-left {
+    left: -50px;
+}
+
+.slideshow .arrow.arrow-right {
+    right: -50px;
+}
+
+
+
+.slideshow .slide-nav {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slideshow .slide-nav div {
+    width: 20px;
+    height: 20px;
+    background-color: #767676;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.slideshow .slide-nav div.active{
+    background-color: #272727;
+}
